@@ -10,7 +10,7 @@ canvas.height = height;
 thisH = height;
 thisW = width;
 var circleArray = [];
-var colorArray =['#003049','#D62828','#F77F00','#FCBF49','#29b6f6','#6A1B9A','#00838f'];
+var colorArray =['rgba(0, 51, 68, 0.5)','rgba(221, 34, 34, 0.5)','rgba(255, 119, 0, 0.5)','rgba(255, 187, 68, 0.5)','rgba(34, 187, 255, 0.5)','rgba(102, 17, 153, 0.5)','rgba(0, 136, 136, 0.5)'];
 var mouse = {
 	x : undefined,
 	y : undefined
@@ -34,16 +34,7 @@ function Circle(x,y,r,dx,dy){
 		}
 		this.x += this.dx/100;
 		this.y += this.dy/100;
-		// this.x += ((this.dx)/this.r)/10;
-		// this.y += ((this.dy)/this.r)/10;
-		//ctx.fillStyle = 'rgba('+((this.dy)/this.r)*255+','+((this.dx)/this.r)*255+','+((this.dx+this.dy)/this.r)*255+', '+(8/r)+')';
-		
-		
-		//if (mouse.x - ) {}
-		// if (mouse.x)
-		// 	this.x = this.x + ((mouse.x-this.x)/200)
-		// if(mouse.y)
-		// 	this.y = this.y + ((mouse.y-this.y)/200)
+
 		if (this.x - mouse.x <100 && mouse.x - this.x < 100 && this.y - mouse.y <100 && mouse.y - this.y < 100 && this.r < 80) {
 			this.r +=1;
 		}else if (this.r>=10 && this.r<5 && mouse.x && mouse.y) {

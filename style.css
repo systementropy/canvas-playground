@@ -17,6 +17,12 @@ body{
 	height: 100vh;
 	overflow: hidden;
 }
+body.shooting{
+	background: linear-gradient(to top, rgba(3, 11, 38, 1) 0%,rgb(33, 9, 105) 10%, rgba(0, 28, 57,1));
+}
+body.bars{
+	background: transparent;
+}
 a{
 	cursor: pointer;
 }
